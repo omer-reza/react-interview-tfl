@@ -17,13 +17,14 @@ export type Station = {
   mode: Mode;
 };
 
-export type ArrivalTimeData = {
-  destination: string;
+export type ArrivalTimeResponseItem = {
+  destinationName: string;
+  destinationNaptanId: string;
+  platformName: string;
+  expectedArrival: string;
   timeToStation: number;
   direction: string;
-  currentLocation: string;
   lineId: string;
   lineName: string;
-  expectedArrival: string;
-  platformName: string;
+  currentLocation: string;
 };
